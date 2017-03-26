@@ -1,23 +1,42 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <nav-app></nav-app>
+    <headers-app></headers-app>
+    <service></service>
+    <images-app></images-app>
+    <about></about>
+    <team></team>
+    <contact></contact>
+    <footer-app></footer-app>
   </div>
 </template>
 
 <script>
+import HeadersApp from './components/HeadersApp'
+import NavApp from './components/NavApp'
+import Service from './components/Service'
+import ImagesApp from './components/Images'
+import About from './components/About'
+import Team from './components/Team'
+import Contact from './components/Contact'
+import FooterApp from './components/FooterApp'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    HeadersApp,
+    NavApp,
+    Service,
+    ImagesApp,
+    About,
+    Team,
+    Contact,
+    FooterApp
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
