@@ -1,51 +1,70 @@
 <template>
-<section id="team" class="bg-light-gray">
+  <section id="team" class="bg-faded">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">The Team</h2>
-                <h3 class="section-subheading text-muted">"If it works, refactor it !".</h3>
-            </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Our Amazing Team</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="team-member">
-                    <img src="../../assets/img/team/sylver.png" class="img-responsive img-circle" alt="">
-                    <h4>Sylver-John Imhoff</h4>
-                    <p class="text-muted">Web Developper | Golang Lover | From Versusmind</p>
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://github.com/sylver-john"><i class="fa fa-github"></i></a>
-                        </li>
-                        <li><a href="https://fr.linkedin.com/in/sylver-john-imhoff-975ba595"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="team-member">
-                    <img src="../../assets/img/team/mathieu.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Mathieu Morainville</h4>
-                    <p class="text-muted">Web Developper | Angu-Man | From Versusmind</p>
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://github.com/mmorainville"><i class="fa fa-github"></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/mathieu-morainville-4b72757a"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img src="../../assets/img/team/1.jpg" class="mx-auto rounded-circle" alt="">
+            <h4>Kay Garland</h4>
+            <p class="text-muted">Lead Designer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">We are both, two youngs Web Developper, whom want to build a better world.</p>
-            </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img src="../../assets/img/team/2.jpg" class="mx-auto rounded-circle" alt="">
+            <h4>Larry Parker</h4>
+            <p class="text-muted">Lead Marketer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img src="../../assets/img/team/3.jpg" class="mx-auto rounded-circle" alt="">
+            <h4>Diana Pertersen</h4>
+            <p class="text-muted">Lead Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 </template>
 
 <script>
-export default {
-  name: 'team'
-}
+  export default {
+    name: 'team'
+  }
 </script>
