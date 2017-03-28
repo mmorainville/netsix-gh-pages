@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* jqBootstrapValidation
  * A plugin for automating validation on Twitter Bootstrap formatted forms.
  *

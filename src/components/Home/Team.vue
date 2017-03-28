@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="team-member">
-                    <img src="../assets/img/team/sylver.png" class="img-responsive img-circle" alt="">
+                    <img src="../../assets/img/team/sylver.png" class="img-responsive img-circle" alt="">
                     <h4>Sylver-John Imhoff</h4>
                     <p class="text-muted">Web Developper | Golang Lover | From Versusmind</p>
                     <ul class="list-inline social-buttons">
@@ -23,7 +23,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="team-member">
-                    <img src="../assets/img/team/mathieu.jpg" class="img-responsive img-circle" alt="">
+                    <img src="../../assets/img/team/mathieu.jpg" class="img-responsive img-circle" alt="">
                     <h4>Mathieu Morainville</h4>
                     <p class="text-muted">Web Developper | Angu-Man | From Versusmind</p>
                     <ul class="list-inline social-buttons">

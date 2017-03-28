@@ -1,4 +1,3 @@
-/* eslint-disable */
 // Contact Form Scripts
 
 $(function() {

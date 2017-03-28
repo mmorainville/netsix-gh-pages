@@ -1,77 +1,47 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables.scss";
+@import "mixins.scss";
 
 // Global Components
 
 body {
     overflow-x: hidden;
-    .body-font;
-}
-
-.text-muted {
-    color: @gray-light;
+    @include body-font;
 }
 
 .text-primary {
-    color: @theme-primary;
+    color: $theme-primary !important;
 }
 
 p {
-    font-size: 14px;
     line-height: 1.75;
 }
 
-p.large {
-    font-size: 16px;
-}
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: none;
-}
-
 a {
-    color: @theme-primary;
-}
-
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: darken(@theme-primary, 10%);
+    color: $theme-primary;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: darken($theme-primary, 10%);
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    .heading-font;
+    @include heading-font;
     font-weight: 700;
-}
-
-.img-centered {
-    margin: 0 auto;
-}
-
-.bg-light-gray {
-    background-color: @gray-lighter;
-}
-
-.bg-darkest-gray {
-    background-color: @gray-darker;
 }
 
 // Restyled Primary Buttons
 
 .btn-primary {
-    .button-variant(white; @theme-primary; @theme-primary);
-    .heading-font;
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
     font-weight: 700;
 }
 
 .btn-xl {
-    .button-variant(white; @theme-primary; @theme-primary);
-    .heading-font;
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
@@ -80,62 +50,51 @@ h1, h2, h3, h4, h5, h6 {
 
 // Custom Navigation Bar
 
-.navbar-custom {
-    background-color: @gray-darker;
-    border-color: transparent;
-    .navbar-brand {
-        color: @theme-primary;
-        .script-font;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            color: darken(@theme-primary, 10%);
-        }
-    }
-    .navbar-collapse {
-        border-color: fade(white, 2%);
-    }
-    .navbar-toggle {
-        background-color: @theme-primary;
-        border-color: @theme-primary;
-        .heading-font;
+#mainNav {
+    background-color: $gray-darker;
+    .navbar-toggler {
+        border: 0;
         color: white;
+        background-color: $theme-primary;
         font-size: 12px;
-        &:hover,
-        &:focus {
-            background-color: @theme-primary;
-        }
+        text-transform: uppercase;
+        @include heading-font;
+        padding: 13px;
+        right: 0;
     }
-    .nav {
-        li {
-            a {
-                .heading-font;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: white;
-                &:hover,
-                &:focus {
-                    color: @theme-primary;
-                    outline: none;
+    .container {
+        padding: 0;
+        .navbar-brand {
+            color: $theme-primary;
+            @include script-font;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                color: darken($theme-primary, 10%);
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 90%;
+                    padding: 0.75em 0;
+                    @include heading-font;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: white;
+                    &:hover,
+                    &.active {
+                        color: $theme-primary;
+                    }
                 }
             }
         }
     }
-    .navbar-nav>.active>a {
-        border-radius: 0;
-        color: white;
-        background-color: @theme-primary;
-    }
-    .navbar-nav>.active>a:hover,
-    .navbar-nav>.active>a:focus {
-        color: white;
-        background-color: darken(@theme-primary, 10%);
-    }
 }
 
-@media(min-width:768px) {
-    .navbar-custom {
+@media(min-width:992px) {
+    #mainNav {
         background-color: transparent;
         padding: 25px 0;
         -webkit-transition: padding 0.3s;
@@ -143,49 +102,49 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
-            font-size: 2em;
+            font-size: 1.75em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
         }
-        .navbar-nav>.active>a {
-            border-radius: 3px;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    padding: 1.1em 1em !important;
+                }
+            }
         }
-    }
-}
-
-// Navbar Change on Scroll
-
-@media(min-width:768px) {
-    .navbar-custom.affix {
-        background-color: @gray-darker;
-        padding: 10px 0;
-        .navbar-brand {
-            font-size: 1.5em;
+        &.navbar-shrink {
+            background-color: $gray-darker;
+            padding: 0;
+            .navbar-brand {
+                padding: 12px 0;
+                font-size: 1.25em;
+            }
         }
     }
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('./assets/img/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    .background-cover;
+    @include background-cover;
     text-align: center;
     color: white;
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
         .intro-lead-in {
-            .serif-font;
+            @include serif-font;
             font-style: italic;
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
         }
         .intro-heading {
-            .heading-font;
+            @include heading-font;
             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
@@ -200,14 +159,14 @@ header {
             padding-top: 300px;
             padding-bottom: 200px;
             .intro-lead-in {
-                .serif-font;
+                @include serif-font;
                 font-style: italic;
                 font-size: 40px;
                 line-height: 40px;
                 margin-bottom: 25px;
             }
             .intro-heading {
-                .heading-font;
+                @include heading-font;
                 font-weight: 700;
                 font-size: 75px;
                 line-height: 75px;
@@ -228,7 +187,7 @@ section {
     }
     h3.section-subheading {
         font-size: 16px;
-        .serif-font;
+        @include serif-font;
         text-transform: none;
         font-style: italic;
         font-weight: 400;
@@ -261,7 +220,7 @@ section {
             max-width: 400px;
             margin: 0 auto;
             .portfolio-hover {
-                background: fade(@theme-primary, 90%);
+                background: fade-out($theme-primary, .9);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -288,8 +247,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -302,7 +261,7 @@ section {
                 margin: 0;
             }
             p {
-                .serif-font;
+                @include serif-font;
                 font-style: italic;
                 font-size: 16px;
                 margin: 0;
@@ -376,7 +335,7 @@ section {
             height: 80px;
             position: absolute;
             z-index: 100;
-            background-color: @theme-primary;
+            background-color: $theme-primary;
             color: white;
             border-radius: 100%;
             border: 7px solid #f1f1f1;
@@ -511,7 +470,8 @@ section {
     text-align: center;
     margin-bottom: 50px;
     img {
-        margin: 0 auto;
+        height: 225px;
+        width: 225px;
         border: 7px solid white;
     }
     h4 {
@@ -535,8 +495,8 @@ aside.clients {
 // Contact Section
 
 section#contact {
-    background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
+    background-color: $gray-darker;
+    background-image: url('./assets/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -556,31 +516,31 @@ section#contact {
         }
     }
     .form-control:focus {
-        border-color: @theme-primary;
+        border-color: $theme-primary;
         box-shadow: none;
     }
     ::-webkit-input-placeholder {
-       .heading-font;
+       @include heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: $gray-lighter;
     }
     :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
+       @include heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: $gray-lighter;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
+       @include heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: $gray-lighter;
     }
-    :-ms-input-placeholder {  
-       .heading-font;
+    :-ms-input-placeholder {
+       @include heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: $gray-lighter;
     }
     .text-danger {
-        color: @theme-danger;
+        color: $theme-danger;
     }
 }
 
@@ -590,14 +550,16 @@ footer {
     padding: 25px 0;
     text-align: center;
     span.copyright {
+        font-size: 90%;
         line-height: 40px;
-        .heading-font;
+        @include heading-font;
         text-transform: none;
     }
     ul.quicklinks {
+        font-size: 90%;
         margin-bottom: 0;
         line-height: 40px;
-        .heading-font;
+        @include heading-font;
         text-transform: none;
     }
 }
@@ -609,7 +571,7 @@ ul.social-buttons {
     li {
         a {
             display: block;
-            background-color: @gray-darker;
+            background-color: $gray-darker;
             height: 40px;
             width: 40px;
             border-radius: 100%;
@@ -623,7 +585,7 @@ ul.social-buttons {
             &:hover,
             &:focus,
             &:active {
-                background-color: @theme-primary;
+                background-color: $theme-primary;
             }
         }
     }
@@ -640,7 +602,7 @@ ul.social-buttons {
     .modal-dialog{
         margin: 0;
         height: 100%;
-        width: auto;
+        max-width: none;
     }
     .modal-content {
         border-radius: 0;
@@ -660,7 +622,7 @@ ul.social-buttons {
         }
         p.item-intro {
             margin: 20px 0 30px;
-            .serif-font;
+            @include serif-font;
             font-style: italic;
             font-size: 16px;
         }
@@ -687,7 +649,7 @@ ul.social-buttons {
             height:75px;
             width:1px;
             margin-left:35px;
-            background-color:@gray-darker;
+            background-color:$gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
@@ -697,15 +659,15 @@ ul.social-buttons {
             .rl {
                 height:75px;
                 width:1px;
-                background-color:@gray-darker;
+                background-color:$gray-darker;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
@@ -717,12 +679,12 @@ ul.social-buttons {
 
 ::-moz-selection {
     text-shadow: none;
-    background: @theme-primary;
+    background: $theme-primary;
 }
 
 ::selection {
     text-shadow: none;
-    background: @theme-primary;
+    background: $theme-primary;
 }
 
 img::selection {
@@ -734,5 +696,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: @theme-primary;
+    webkit-tap-highlight-color: $theme-primary;
 }

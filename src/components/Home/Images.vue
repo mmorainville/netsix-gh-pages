@@ -15,7 +15,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../assets/img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="../../assets/img/portfolio/roundicons.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Video's collections</h4>
@@ -29,7 +29,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../assets/img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="../../assets/img/portfolio/startup-framework.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Streaming</h4>
@@ -43,7 +43,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="../assets/img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <img src="../../assets/img/portfolio/treehouse.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Chat</h4>
