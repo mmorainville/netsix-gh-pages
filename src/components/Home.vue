@@ -6,7 +6,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">Download {{ appName }}</a>
+        <a class="navbar-brand page-scroll" href="#page-top"><img src="../assets/logo.svg"></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -36,6 +36,7 @@
           <div class="intro-lead-in">{{ appName }}</div>
           <div class="intro-heading">A new way to share your videos</div>
           <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+          <a href="https://github.com/mmorainville/netsix/releases/latest" target="_blank" class="page-scroll btn btn-xl"><i class="fa fa-download fa-fw" aria-hidden="true"></i> Download</a>
         </div>
       </div>
     </header>
@@ -104,3 +105,13 @@
     }
   }
 </script>
+
+<style scoped>
+  .navbar-brand {
+    font-size: initial;
+  }
+
+  .navbar-brand img {
+    width: 32px;
+  }
+</style>

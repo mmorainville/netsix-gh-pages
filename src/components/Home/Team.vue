@@ -12,10 +12,10 @@
           <div class="team-member">
             <img src="../../assets/img/team/mathieu.jpg" class="mx-auto rounded-circle" alt="">
             <h4>Mathieu Morainville</h4>
-            <p class="text-muted">Web Developer | Anguman | From Versusmind</p>
+            <p class="text-muted">Web Developer | JavaScript-Man</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="https://github.com/mmorainville"><i class="fa fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.linkedin.com/in/mathieu-morainville-4b72757a"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://github.com/mmorainville" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/mathieu-morainville-4b72757a" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -23,10 +23,10 @@
           <div class="team-member">
             <img src="../../assets/img/team/sylver.png" class="mx-auto rounded-circle" alt="">
             <h4>Sylver-John Imhoff</h4>
-            <p class="text-muted">Web Developer | Golang Lover | From Versusmind</p>
+            <p class="text-muted">Web Developer | Golang Lover</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="https://github.com/sylver-john"><i class="fa fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="https://fr.linkedin.com/in/sylver-john-imhoff-975ba595"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://github.com/sylver-john" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://fr.linkedin.com/in/sylver-john-imhoff-975ba595" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
