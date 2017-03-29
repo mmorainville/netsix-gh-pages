@@ -10,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#services">Services</a>
+              <a class="nav-link page-scroll" href="#services">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+              <a class="nav-link page-scroll" href="#portfolio">Screenshots</a>
             </li>
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#about">About</a>
