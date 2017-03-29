@@ -10,8 +10,6 @@ require('bootstrap')
 require('font-awesome/css/font-awesome.css')
 
 require('./assets/js/jquery.easing')
-require('./assets/js/jqBootstrapValidation')
-require('./assets/js/contact_me')
 require('./assets/js/agency')
 
 Vue.config.productionTip = false
