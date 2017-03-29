@@ -26,7 +26,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-1-thumbnail.png" alt="">
+                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-2-thumbnail.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -40,7 +40,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-1-thumbnail.png" alt="">
+                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-3-thumbnail.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -54,7 +54,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-1-thumbnail.png" alt="">
+                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-4-thumbnail.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -68,7 +68,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-1-thumbnail.png" alt="">
+                <img class="rounded-circle img-fluid" src="../../assets/img/about/step-5-thumbnail.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">

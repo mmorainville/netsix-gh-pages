@@ -17,8 +17,8 @@
                   <!-- Project Details Go Here -->
                   <h2>Netsix</h2>
                   <p class="item-intro text-muted">Main view of the app.</p>
-                  <img class="img-fluid d-block mx-auto" src="../../assets/img/screenshot.png" alt="">
-                  <p>Here you can watch videos from friends' collections.</p>
+                  <img class="img-fluid d-block mx-auto" src="../../assets/img/screenshot-connected.png" alt="">
+                  <p>Here you can watch videos from your friends' collections.</p>
                   <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
               </div>

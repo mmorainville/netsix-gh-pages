@@ -15,7 +15,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img src="../../assets/img/screenshot-thumbnail.png" class="img-fluid" alt="">
+            <img src="../../assets/img/screenshot-connected-01.png" class="img-fluid" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Collections</h4>
@@ -29,7 +29,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img src="../../assets/img/screenshot-thumbnail.png" class="img-fluid" alt="">
+            <img src="../../assets/img/screenshot-connected-03.png" class="img-fluid" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Streaming</h4>
@@ -43,7 +43,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img src="../../assets/img/screenshot-thumbnail.png" class="img-fluid" alt="">
+            <img src="../../assets/img/screenshot-connected-02.png" class="img-fluid" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Chat</h4>
