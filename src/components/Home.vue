@@ -6,7 +6,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand page-scroll" href="#page-top">Download {{ appName }}</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -33,8 +33,8 @@
     <header>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
-          <div class="intro-heading">It's Nice To Meet You</div>
+          <div class="intro-lead-in">{{ appName }}</div>
+          <div class="intro-heading">A new way to share your videos</div>
           <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
       </div>
@@ -60,25 +60,19 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+            <span class="copyright">Copyright &copy; {{ appName }} 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
+              <li class="list-inline-item"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MRDR2837QXHK8" target="_blank" title="Donate"><i class="fa fa-paypal"></i></a></li>
             </ul>
           </div>
           <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item"><a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item"><a href="#">Terms of Use</a>
-              </li>
-            </ul>
+            <!--<ul class="list-inline quicklinks">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+            </ul>-->
+            <span class="copyright">We will not be responsible for any devious usage of the app.</span>
           </div>
         </div>
       </div>
@@ -105,7 +99,7 @@
     },
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        appName: 'Netsix'
       }
     }
   }
