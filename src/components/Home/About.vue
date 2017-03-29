@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Wath videos from your friends in 6 easy steps !</h3>
         </div>
       </div>
       <div class="row">
@@ -16,11 +16,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
+                  <h4>Step 1</h4>
+                  <h4 class="subheading">Get your ID</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Open the app and click on "Copy" in the upper right corner.</p>
                 </div>
               </div>
             </li>
@@ -30,11 +30,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
+                  <h4>Step 2</h4>
+                  <h4 class="subheading">Share your ID</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Give the ID you just copied to a friend who want to watch your videos.</p>
                 </div>
               </div>
             </li>
@@ -44,11 +44,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h4>Step 3</h4>
+                  <h4 class="subheading">Connect</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Enter your friend's ID in the "Remote" tab.</p>
                 </div>
               </div>
             </li>
@@ -58,17 +58,31 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
+                  <h4>Step 4</h4>
+                  <h4 class="subheading">Choose your video</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Choose a video from your friend's collection in the "Collections" panel.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="../../assets/img/about/4.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Step 5</h4>
+                  <h4 class="subheading">Wait a short time</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Your friend is automatically preparing the video for you before streaming it.</p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Be Part<br>Of Our<br>Story!</h4>
+                <h4>Step 6<br>Enjoy<br>Your video</h4>
               </div>
             </li>
           </ul>
