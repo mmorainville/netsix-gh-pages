@@ -23,23 +23,15 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
+    publicPath: './'
   },
   plugins: [
     new PrerenderSpaPlugin(
       // Path to compiled app
       path.join(__dirname, '../dist'),
       // List of endpoints you wish to prerender
-      ['/'],
-      {
-        postProcessHtml: function (context) {
-          var rootPath = '/netsix-gh-pages'
-          return context.html.replace(
-            /\/static\//i,
-            rootPath + '/static/'
-          )
-        }
-      }
+      ['/']
     ),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
