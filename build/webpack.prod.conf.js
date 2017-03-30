@@ -30,7 +30,16 @@ var webpackConfig = merge(baseWebpackConfig, {
       // Path to compiled app
       path.join(__dirname, '../dist'),
       // List of endpoints you wish to prerender
-      [ '/' ]
+      ['/'],
+      {
+        postProcessHtml: function (context) {
+          var rootPath = '/netsix-gh-pages'
+          return context.html.replace(
+            /\/static\//i,
+            rootPath + '/static/'
+          )
+        }
+      }
     ),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
