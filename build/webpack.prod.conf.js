@@ -23,8 +23,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
-    publicPath: '/netsix-gh-pages/'
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
     new PrerenderSpaPlugin(
