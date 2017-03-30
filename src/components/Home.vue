@@ -36,7 +36,7 @@
           <div class="intro-lead-in">{{ appName }}</div>
           <div class="intro-heading">A new way to share your videos</div>
           <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-          <a href="https://github.com/mmorainville/netsix/releases/latest" target="_blank" class="page-scroll btn btn-xl"><i class="fa fa-download fa-fw" aria-hidden="true"></i> Download</a>
+          <a @click="trackClick(downloadLink)" :href="downloadLink" target="_blank" class="page-scroll btn btn-xl"><i class="fa fa-download fa-fw" aria-hidden="true"></i> Download</a>
         </div>
       </div>
     </header>
@@ -65,7 +65,7 @@
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a @click="trackClick" :href="paypalLink" target="_blank" title="Donate"><i class="fa fa-paypal"></i></a></li>
+              <li class="list-inline-item"><a @click="trackClick(paypalLink)" :href="paypalLink" target="_blank" title="Donate"><i class="fa fa-paypal"></i></a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -101,12 +101,13 @@
     data () {
       return {
         appName: 'Netsix',
+        downloadLink: 'https://github.com/mmorainville/netsix/releases/latest',
         paypalLink: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MRDR2837QXHK8'
       }
     },
     methods: {
-      trackClick () {
-        window.ga('send', 'event', 'outbound', 'click', this.paypalLink)
+      trackClick (url) {
+        window.ga('send', 'event', 'outbound', 'click', url)
       }
     }
   }
