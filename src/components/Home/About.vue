@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">About</h2>
-          <h3 class="section-subheading text-muted">Wath videos from your friends in 6 easy steps !</h3>
+          <h2 class="section-heading">Getting started</h2>
+          <h3 class="section-subheading text-muted">Watch videos from your friends in 6 easy steps !</h3>
         </div>
       </div>
       <div class="row">
@@ -34,7 +34,7 @@
                   <h4 class="subheading">Share your ID</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Give the ID you just copied to a friend who want to watch your videos.</p>
+                  <p class="text-muted">Share the ID you just copied with a friend who want to watch your videos.</p>
                 </div>
               </div>
             </li>

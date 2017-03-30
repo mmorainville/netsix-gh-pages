@@ -16,7 +16,7 @@
               <a class="nav-link page-scroll" href="#portfolio">Screenshots</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#about">About</a>
+              <a class="nav-link page-scroll" href="#about">Getting started</a>
             </li>
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#team">Team</a>

@@ -33,7 +33,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Streaming</h4>
-            <p class="text-muted">Choose a video and read it in streaming in a real peer-to-peer manner.</p>
+            <p class="text-muted">Choose a video and watch it in streaming in a real peer-to-peer manner.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
