@@ -6,7 +6,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top"><img src="../assets/logo.svg"></a>
+        <a class="navbar-brand page-scroll" href="#app"><img src="../assets/logo.svg"></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -65,7 +65,7 @@
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MRDR2837QXHK8" target="_blank" title="Donate"><i class="fa fa-paypal"></i></a></li>
+              <li class="list-inline-item"><a @click="trackClick" :href="paypalLink" target="_blank" title="Donate"><i class="fa fa-paypal"></i></a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -100,7 +100,13 @@
     },
     data () {
       return {
-        appName: 'Netsix'
+        appName: 'Netsix',
+        paypalLink: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MRDR2837QXHK8'
+      }
+    },
+    methods: {
+      trackClick () {
+        window.ga('send', 'event', 'outbound', 'click', this.paypalLink)
       }
     }
   }
