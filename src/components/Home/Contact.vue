@@ -63,3 +63,9 @@
     }
   }
 </script>
+
+<style scoped>
+  .section-subheading.text-muted {
+    color: #eceeef !important;
+  }
+</style>
