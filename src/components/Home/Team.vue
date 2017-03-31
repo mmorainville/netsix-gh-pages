@@ -14,8 +14,8 @@
             <h4>Mathieu Morainville</h4>
             <p class="text-muted">Web Developer | JavaScript-Man</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="https://github.com/mmorainville" target="_blank"><i class="fa fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.linkedin.com/in/mathieu-morainville-4b72757a" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a @click="trackClick(githubMathieu)" :href="githubMathieu" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li class="list-inline-item"><a @click="trackClick(linkedinMathieu)" :href="linkedinMathieu" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -25,8 +25,8 @@
             <h4>Sylver-John Imhoff</h4>
             <p class="text-muted">Web Developer | Golang Lover</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="https://github.com/sylver-john" target="_blank"><i class="fa fa-github"></i></a></li>
-              <li class="list-inline-item"><a href="https://fr.linkedin.com/in/sylver-john-imhoff-975ba595" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a @click="trackClick(githubSylver)" :href="githubSylver" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li class="list-inline-item"><a @click="trackClick(linkedinSylver)" :href="linkedinSylver" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -42,6 +42,19 @@
 
 <script>
   export default {
-    name: 'team'
+    name: 'team',
+    data () {
+      return {
+        githubMathieu: 'https://github.com/mmorainville',
+        linkedinMathieu: 'https://www.linkedin.com/in/mathieu-morainville-4b72757a',
+        githubSylver: 'https://github.com/sylver-john',
+        linkedinSylver: 'https://fr.linkedin.com/in/sylver-john-imhoff-975ba595'
+      }
+    },
+    methods: {
+      trackClick (url) {
+        window.ga('send', 'event', 'outbound', 'click', url)
+      }
+    }
   }
 </script>
