@@ -24,6 +24,9 @@
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#contact">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/mmorainville/netsix" target="_blank"><i class="fa fa-github fa-fw" aria-hidden="true"></i> GitHub</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -35,8 +38,8 @@
         <div class="intro-text">
           <div class="intro-lead-in">{{ appName }}</div>
           <div class="intro-heading">A new way to share your videos</div>
-          <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-          <a @click="trackClick(downloadLink)" :href="downloadLink" target="_blank" class="page-scroll btn btn-xl"><i class="fa fa-download fa-fw" aria-hidden="true"></i> Download</a>
+          <a href="#services" class="page-scroll btn btn-xl m-2">Tell Me More</a>
+          <a @click="trackClick(downloadLink)" :href="downloadLink" target="_blank" class="btn btn-xl m-2"><i class="fa fa-download fa-fw" aria-hidden="true"></i> Download</a>
         </div>
       </div>
     </header>
