@@ -25,7 +25,7 @@
               <a class="nav-link page-scroll" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/mmorainville/netsix" target="_blank"><i class="fa fa-github fa-fw" aria-hidden="true"></i> GitHub</a>
+              <a class="nav-link" href="https://github.com/pulsardev/netsix" target="_blank"><i class="fa fa-github fa-fw" aria-hidden="true"></i> GitHub</a>
             </li>
           </ul>
         </div>
@@ -104,7 +104,7 @@
     data () {
       return {
         appName: 'Netsix',
-        downloadLink: 'https://github.com/mmorainville/netsix/releases/latest',
+        downloadLink: 'https://github.com/pulsardev/netsix/releases/latest',
         paypalLink: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MRDR2837QXHK8'
       }
     },
